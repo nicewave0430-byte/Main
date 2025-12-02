@@ -4,15 +4,15 @@ public class Question1 {
 
 	public static void main(String[] args) {
 		
-		        byte byteNum = 10;
-		        short shortNum = 100;
-		        int intNum = 1000;
-		        long longNum = 10000L;
-		        float floatNum = 1.5f;
-		        double doubleNum = 2.5;
-		        char charVar = 'あ';
-		        String stringVar = "こんにちは";
-		        boolean booleanVar = true;
+		        byte byteNum = 0;
+		        short shortNum = 0;
+		        int intNum = 0;
+		        long longNum = 0L;
+		        float floatNum = 0.0f;
+		        double doubleNum = 0.0;
+		        char charVar = '\u0000';
+		        String stringVar = "null";
+		        boolean booleanVar = false;  //Q1修正1202
 
 		        byteNum = 111;
 		        shortNum = 20;
@@ -33,7 +33,7 @@ public class Question1 {
 		        System.out.println(charVar);
 		        System.out.println(stringVar);
 		        System.out.println(booleanVar);
-
+		        System.out.println(byteNum + shortNum + intNum + longNum);//Q3修正1202
 		        String name = "山田太郎";
 		        System.out.println("名前：" + name);
 		      
@@ -46,11 +46,13 @@ public class Question1 {
 		        int num2 = 5;
 		        int sum = num1 + num2;
 		        System.out.println("合計：" + sum);
+		        
+		        int score = 0;  // 初期値
+		        score += 80;
+		        score += 20;
+		        score += 100;
+		        System.out.println("score:" + score);//Q7修正1202
 
-		        int score = 80;
-		        score = 20;
-		        score = 100;
-		        System.out.println("score：" + score);
 		     
 		        double price = 99.99;
 		        int priceInt = (int) price;  // 小数点以下切り捨て
