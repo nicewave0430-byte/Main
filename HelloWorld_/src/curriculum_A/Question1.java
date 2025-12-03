@@ -27,7 +27,7 @@ public class Question1 {
 		        System.out.println(byteNum+shortNum+intNum+longNum);    //11110
 		        System.out.println((int)(floatNum + doubleNum));     // 20
 		        System.out.println(letter+" "+letters+" "+isboolean);  //a ハロー　true
-		        System.out.println(intNum + 10130 );      //11130
+		        System.out.println((int)(intNum+longNum+shortNum+floatNum+doubleNum+byteNum));      //11130
 		        double answer =  byteNum * shortNum * intNum * longNum;
 		        System.out.printf("%.0E\n", answer);          //1E+10
 		        System.out.println(doubleNum/shortNum);   //0.105
