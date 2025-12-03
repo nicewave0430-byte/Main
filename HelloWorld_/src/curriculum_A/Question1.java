@@ -24,12 +24,12 @@ public class Question1 {
 		        letters = "ハロー";
 		        isboolean = true;      //Q2
 
-		        System.out.println(byteNum +11100);    //11110
-		        System.out.println(shortNum- 80 );     // 20
+		        System.out.println(byteNum+shortNum+intNum+longNum);    //11110
+		        System.out.println((int)(floatNum + doubleNum));     // 20
 		        System.out.println(letter+" "+letters+" "+isboolean);  //a ハロー　true
 		        System.out.println(intNum + 10130 );      //11130
 		        double answer =  byteNum * shortNum * intNum * longNum;
-		        System.out.println("1E+10");              //1E+10
+		        System.out.printf("%.0E\n", answer);          //1E+10
 		        System.out.println(doubleNum/shortNum);   //0.105
 		        System.out.println(byteNum- shortNum);    //-90
 		        //Q3修正1202
