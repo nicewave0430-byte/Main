@@ -33,7 +33,7 @@ public class Question3 {
  for (int j = 1; j <= i; j++) { 
  System.out.print("*");
 	   }
-	    System.out.println(); 
+	    System.out.println(); }
 	    
 	 //Q6
 	    int i2 = 1;            
@@ -46,7 +46,7 @@ public class Question3 {
 	    int i3 = 2;            
 
 	    while (i3 <= 20) {     
-	        System.out.println(i);
+	        System.out.println(i3);
 	        i3 += 2;           
 	    }
 	    //Q8
@@ -66,7 +66,6 @@ public class Question3 {
 	    }
 	    System.out.println(sum1);
 	    
-	    }
 	    //Q10
 	Scanner sc = new Scanner(System.in);  
     int num = 0;                          
@@ -82,16 +81,18 @@ public class Question3 {
     }
 
     sc.close();
+    
         //Q11
-        for (int i = 1; i <= 9; i++) {         
+        for (int i6 = 1; i6 <= 9; i6++) {         
         for (int j = 1; j <= 9; j++) {       
-                        int result = i * j;
-                        System.out.printf("%02d x %02d = %02d | ", i, j, result);
+                        int result = i6 * j;
+                        System.out.printf("%02d x %02d = %02d | ", i6, j, result);
                     }
                     System.out.println();                
                 }
             }
-        }
+	}
+
 
     
 
