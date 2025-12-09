@@ -29,9 +29,9 @@ public class Question3 {
       System.out.println("合計: " + sum);	
 	
 	//Q5
-	for (int i = 1; i <= 5; i++) {    
- for (int j = 1; j <= i; j++) { 
- System.out.print("*");
+	  for (int i = 1; i <= 5; i++) {    
+      for (int j = 1; j <= i; j++) { 
+      System.out.print("*");
 	   }
 	    System.out.println(); }
 	    
@@ -67,10 +67,10 @@ public class Question3 {
 	    System.out.println(sum1);
 	    
 	    //Q10
-	Scanner sc = new Scanner(System.in);  
-    int num = 0;                          
+	    Scanner sc = new Scanner(System.in);  
+        int num = 0;                          
 
-    while (true) {                        
+        while (true) {                        
         System.out.print("数値を入力してください：");
         num = sc.nextInt();               
 
@@ -80,7 +80,7 @@ public class Question3 {
         }
     }
 
-    sc.close();
+        sc.close();
     
         //Q11
         for (int i6 = 1; i6 <= 9; i6++) {         

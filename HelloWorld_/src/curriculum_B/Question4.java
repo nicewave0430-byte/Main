@@ -114,9 +114,9 @@ public class Question4 {
                 {{5, 6}, {7, 8}}
         };
 
-        for (int i = 0; i < array.length; i++) {               // ブロック
-            for (int j = 0; j < array[i].length; j++) {        // 行
-                for (int k = 0; k < array[i][j].length; k++) { // 列
+        for (int i = 0; i < array.length; i++) {               
+            for (int j = 0; j < array[i].length; j++) {        
+                for (int k = 0; k < array[i][j].length; k++) { 
                     System.out.println(array[i][j][k]);
                 }
             }
@@ -125,11 +125,6 @@ public class Question4 {
     }
 }
 
-              S
+             
          
-       
-
-
-	
-
-
+      
