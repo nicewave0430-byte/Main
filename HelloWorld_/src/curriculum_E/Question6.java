@@ -1,5 +1,7 @@
 package curriculum_E;
 
+import java.util.Scanner;
+
 public class Question6 {
 
 	public static void main(String[] args) {
@@ -7,10 +9,11 @@ public class Question6 {
 		Player player = new Player();
 		CPU cpu = new CPU();
 
+		Scanner sc = new Scanner(System.in); // ★追加
 		boolean win = false;
 
 		while (!win) {
-			player.inputHand();
+			player.inputHand(sc); // ★修正
 			cpu.generateHand();
 
 			int p = player.getHand();
@@ -30,6 +33,8 @@ public class Question6 {
 				System.out.println("あいこ！");
 			}
 		}
+
+		sc.close(); // ★最後に1回だけ
 	}
 
 	private static String handName(int hand) {

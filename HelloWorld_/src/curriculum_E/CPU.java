@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class CPU {
 	private int hand;
+	private final Random rand = new Random();
 
 	public void generateHand() {
-		Random rand = new Random();
 		hand = rand.nextInt(3);
 	}
 
