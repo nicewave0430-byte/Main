@@ -1,5 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%!
+    private String escapeHtml(String str) {
+        if (str == null) {
+            return "";
+        }
+        return str.replace("&", "&amp;")
+                  .replace("<", "&lt;")
+                  .replace(">", "&gt;")
+                  .replace("\"", "&quot;")
+                  .replace("'", "&#39;");
+    }
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,11 +50,11 @@
         for (int i = 0; i < tableData.length; i++) {
 %>
         <tr>
-            <td><%= tableData[i][0] %></td>
-            <td><%= tableData[i][1] %></td>
-            <td><%= tableData[i][2] %></td>
-            <td><%= tableData[i][3] %></td>
-            <td><%= tableData[i][4] %></td>
+            <td><%= escapeHtml(tableData[i][0]) %></td>
+            <td><%= escapeHtml(tableData[i][1]) %></td>
+            <td><%= escapeHtml(tableData[i][2]) %></td>
+            <td><%= escapeHtml(tableData[i][3]) %></td>
+            <td><%= escapeHtml(tableData[i][4]) %></td>
         </tr>
 <%
         }
